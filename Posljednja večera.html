@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+.naslov { grid-area: header; 
+background-color: black !important;
+}
+.glavni { grid-area: glavni;
+  background-color: rgba(138, 28, 28, 0.95) !important
+}
+.menu { grid-area: menu; 
+  background-color: brown !important
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header menu'
+    'glavni glavni glavni glavni glavni glavni glavni';
+  
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Cinemaaustralia.jpg/800px-Cinemaaustralia.jpg  );  
+ 
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 830px) {
+  .naslov { grid-area: 1 / 1 / 2 / 7; }
+
+  .glavni { grid-area: 3 / 1 / 4 / 7; }
+  .menu { grid-area: 2 / 1 / 3 / 7; }
+
+  .grid-container {row-gap: 10px;}
+  .btn {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+}
+
+}
+
+.button {
+  background-color: #EBEB08;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: none;
+}
+
+
+.btn {
+  position: absolute;
+  left: 80%;
+  top: 10%;
+}
+
+.video { width:1000;
+ height:1000;
+}
+
+p {background-color: brown;
+  border-radius: 200px;
+  padding: 60px;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="grid-container">
+  <div class="naslov"><h1 style="color: white;">Rajski show - Posljednja večera</h1></div>
+  <div class="glavni"> 
+    <p>OPIS: Film na originalnu temu, bolje rečeno talkshow. Zajedno s kolegama iz razreda (ja, kolega i dvije kolegice) na smiješan način pokušavamo predstaviti sliku „Posljednja večera“ od tri različita umjetnika za projektni zadatak iz likovnog.</p>
+    
+    <p style="text-align: center;"><iframe width="70%" height="400" webkitallowfullscreen mozallowfullscreen allowfullscreen src="https://www.youtube.com/embed/URrNSqSXm-k">
+    </iframe> 
+    </p>
+    <p>Kontekst nastanka: Za zadatak iz likovnog smo trebali na originalan način predstaviti sliku „Posljednja večera“ iz tog sam odlučio nagovoriti kolege da snimimo kratki videozapis preko Teamsa.</p>
+   
+    <div style="background-color: brown;
+    border-radius: 200px;
+    padding: 60px;">
+      <p>Glumci: </p>
+    <ul>
+      <li>Jakov Silovski (Jacopo Tintoretto)</li>
+      <li>Ines Gabrić (Andrea del Castagno)</li>
+      <li>Mario Čičin-Šain (papa Ivan II.)- scenarist</li>
+      <li>Jana Dizdar (Leonardo da Vinci)- montaža</li>
+    </ul>
+    </div>
+
+    <p>Napravljen:  1.4.2021.</p>
+    <p>Radnja: Papa Ivan II. kao i svakodnevno vodi svoj Rajski show, tj. show u samome raju. Za današnju epizodu sakupio je tri velika umjetnika (Jacopa Tintoretta, Andrea del Castagnu i Leonarda da Vincia) kako bi svatko od njih detaljno objasnio  svoju verziju slike „Posljednja večera“. No, unatoč tome što se show događa u raju, umjetnici se ne ponašaju sasvim pristojno te dolazi do drame. Pogledajte kako je današnja epizoda Rajskoga showa izgledala.</p>
+
+        
+    
+    
+    
+    
+    
+    
+  </div>
+ 
+  <div class="menu" style="text-align: center;" >
+    <button class="button" onclick="document.location='index.html'"><strong>Vrati se na originalnu stranicu</strong></button>
+  </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
