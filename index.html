@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{font-family: Georgia, 'Times New Roman', Times, serif;}
+
+
+.naslov { grid-area: header; 
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Person_writing_in_a_note_book.jpg/800px-Person_writing_in_a_note_book.jpg);
+  background-size:cover;  
+ background-repeat: no-repeat;
+ height: 600px;;
+
+}
+.glavni { grid-area: glavni;
+background-color: #FFFF99 !important;
+}
+.menu { grid-area: menu; 
+  background-color: rgb(179, 39, 39) !important
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header menu'
+    'glavni glavni glavni glavni glavni menu';
+    row-gap: 10px;
+  column-gap: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 35px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: green;
+}
+.uredi_p {background-color:rgb(255, 255, 153);
+  border-radius: 200px;
+  padding: 60px;
+}
+
+.podnaslov {
+    text-align: center; 
+    background-color: rgba(255, 255, 153, 0.4) !important;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 100px;
+    height: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+@media only screen and (max-width: 830px) {
+  .naslov { grid-area: 1 / 1 / 2 / 7; }
+
+  .glavni { grid-area: 3 / 1 / 4 / 7; }
+  .menu { grid-area: 2 / 1 / 3 / 7; }
+
+  .grid-container {row-gap: 10px;}
+  .podnaslov {font-size: 95px;}
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="grid-container">
+  <div class="naslov"><h1 class="podnaslov" >MAOPIS!</h1></div>
+  
+  <div class="glavni"> <h2 style="font-size:300%;"> Što je ova stranica? </h2>
+    <p class="uredi_p"> Dobrodošli! Posjetili ste stranicu MAOPIS, to jest „Mario piše scenarij“. Na ovoj stranici nalaze se svi videozapisi za koje sam ja (Mario Čičin-Šain) napisao scenarij i zajedno sa svojim prijateljima ih snimio. Ova stranica nema nikakvu komercijalnu svrhu, već sam htio podijeliti svoj hobi i stvaralačke sposobnosti s ostalim ljudima. Na stranici se nalaze videozapisi te dodatan tekst koji objašnjava situaciju u kojem je nastao videozapis, radnju videozapisa te ljude koji su doprinijeli njihovom nastanku. Nadam se da će te uživati! (Nije dozvoljeno koristiti materijale s ove stranice)  </p>
+    
+    <hr>
+    
+    <h2> Ilijada XVI. pjevanje </h2>
+    <p> Najnovije nastali film! Pogledajte kako 4 mladića na smiješan način prepričavaju cijelo XVI. pjevanje Homerove Ilijade. <a href="Ilijada.html">Pogledaj_više</a>
+    </p>
+    <p> <img src="Slika Ilijada 1.png" alt="Slika iz filma" style="width:500px;height: 300px;"> <img src="Slika Ilijada 2.png" alt="Slika iz filma" style="width:500px;height:300px;"></p>
+    <hr>
+    
+    
+    <h2> Zagrebačke rakete </h2>
+    <p> Opis: Kratka serija od jedne epizode na originalnu temu. Šest mladića opisuju poznate „Zagrebačke rakete“ i pokušavaju glumiti svakodnevni život njihovih neobičnih stanara.<a href="Zagrebačke rakete.html">Pogledaj_više</a></p>
+    <p> <img src="Slika Rakete 1.png" alt="Slika Rakete 1" style="width:500px;height: 300px;"> <img src="Slika Rakete 2.png" alt="Slika Rakete 2" style="width:500px;height:300px;"></p>
+    <hr>
+    
+    
+    <h2> Posljednja večera </h2>
+    <p> Film na originalnu temu, bolje rečeno talkshow. Zajedno s kolegama iz razreda (ja, kolega i dvije kolegice) na smiješan način pokušavamo predstaviti sliku „Posljednja večera“ od tri različita umjetnika za projektni zadatak iz likovnog. <a href="Posljednja večera.html"> Pogledaj_više</a></p>
+    <p> <img src="Posljednja večera slika show.jpg" alt="Posljednja večera slika show" style="width:500px;height: 300px;"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/1920px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg" alt="Slika Posljednje večera Da Vinci" style="width:500px;height:300px;"></p>
+    <hr>
+    
+    
+    <h2> Eneida IV. Pjevanje </h2>
+    <p> U ovom filmu na smiješan se način prepričava cijelo IV. pjevanje Vergilijeve Eneide. Ja i još 5 mladića po prvi put snimamo (moglo bi se reći) pravi film. <a href="Eneida.html">Pogledaj_više</a> </p>
+    <p> <img src="Slika Eneida 1.png" alt="Slika Eneida 1" style="width:500px;height: 300px;"> <img src="Slika Eneida 2.png" alt="Slika Eneida 2" style="width:500px;height:300px;"></p>
+    <hr>
+
+  </div>
+ 
+  <div class="menu">
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+      <a href="Ilijada.html">Ilijada</a>
+      <a href="Zagrebačke rakete.html">Zagrebačke rakete</a>
+      <a href="Posljednja večera.html">Posljednja večera</a>
+      <a href="Eneida.html">Eneida</a>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
